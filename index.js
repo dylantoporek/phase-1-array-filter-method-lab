@@ -1,5 +1,5 @@
 // Code your solution here
-const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'Bobby'];
+
 
 function findMatching(collection, string){
   let chosen = []
@@ -22,32 +22,17 @@ function findMatching(collection, string){
   }
 
 
-  const drivers = [
-    {
-      name: 'Bobby',
-      hometown: 'Pittsburgh' },
-    {
-      name: 'Sammy',
-      hometown: 'New York' } ,
-    {
-      name: 'Sally',
-      hometown: 'Cleveland' },
-    {
-      name: 'Annette',
-      hometown: 'Los Angeles' },
-    {
-      name: 'Bobby',
-      hometown: 'Tampa Bay' }
-  ];
 
   //findMatching(drivers, 'Bobby');
 
   function matchName(collection, string){
+    let chosen = []
     for (const driver of collection){
       if (driver.name === string){
-        console.log(driver);
-
-      }
+        chosen.push(driver);
+  }
+      
     }
-}
+   return chosen;
+  }
 
